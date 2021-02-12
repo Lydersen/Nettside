@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+ 
+ <html>
+ <head>
+   <title>Javascript Test</title>
+ </head>
+   
+   <body>
+     <form style="border: 1px solid; padding: 10px">
+      <p>Fornavn:</p>
+      <input type="texts">
+      <p>Etternavn: </p>
+      <input type="text">
+      <p>Email</p>
+      <input type="email">
+      <p>Passord:</p>
+      <input type="password">
+      <p>Fødseldato</p>
+      <input type="date">
+      <p>Gutt/Mann</p>
+      <input type="radio" name="kjonn">
+      <p>Jente/Dame</p>
+      <input type="radio" name="kjonn">
+      <p>Annet Kjønn</p>
+      <input type="radio" name="kjonn">
+      <br>
+      <input type="submit" value="Registrer Bruker">
+      
+     </form>
+     
+     <br>
+     <br>
+     <input id="tekst" type="text">
+     <input type="button" value="Trykk Her" onclick="alarm()">
+     
+     <br>
+     <br>
+     <h1>Dette skal bli en kalkulator</h1>
+     Tall1:
+     <input id="tall1" type="text">
+     Tall2:
+     <input id="tall2" type="text">
+     
+     <script>
+     
+     function kalkis() {
+       let tall1 = document.getElementById("tall1").value
+       let tall2 = document.getElementById("tall2").value
+       tall1 = parseInt(tall1)
+       tall2 = parseInt(tall2)
+     }
+     
+      /*console.log("Goodbye Wsorld")
+      alert("DU HAR FÅTT VIRUS! Trykk ok for mer virus!")
+      
+      let tall1 = 100;
+      let tall2 = 200;
+      console.log(tall1 + tall2);
+      */
+      
+      function alarm() {
+       let tekst = document.getElementById("tekst").value
+       alert(tekst)
+       
+        
+      }
+      
+     </script>
+     
+     
+   </body>
+   
+   
+   
+   
+   
+   
+   
+ </html>
